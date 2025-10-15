@@ -1,0 +1,226 @@
+/* ===================== */
+/* 📱 АДАПТИВ */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .container, .process, footer, .navBar {
+    padding: 0 40px;
+  }
+
+  .header {
+    width: 70%;
+  }
+
+  .vlad, .shary {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navigation {
+    display: none;
+  }
+
+  .contactBtnDiv {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    margin-top: 120px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .vlad, .shary {
+    font-size: 36px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .textMyWork{
+    font-size: 36px;
+  }
+
+  .titlePortfolio{
+    margin-bottom: 0px;
+  }
+
+  ul{
+    padding: 0px;
+  }
+
+  .myWork {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .descriptionPortfolio {
+    width: 100%;
+  }
+
+  .firstProject, .secondProject {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+
+  .descriptionFirstProject{
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name {
+    font-size: 24px;
+    color: var(--color-accent);
+  }
+
+  .process {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .processTitles {
+    width: 100%;
+    position: static;
+    text-align: left;
+  }
+
+  .listDiv {
+    width: 100%;
+  }
+
+  .listElement {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .commentsContainer {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .commentsDiv {
+    width: 100%;
+  }
+
+  .contactsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer {
+        display: none;
+        /* align-items: center;
+        gap: 20px;
+        text-align: left;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap; */
+  }
+
+  /* .footerNav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footerLogo{
+    width: 30%;
+    flex: 0;
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  } */
+}
+
+/* Универсальное правило для изображений — чтобы они не выходили за контейнер */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* ===================== */
+/* 🧩 ЛЕВОЕ ВЫРАВНИВАНИЕ (без вмешательства в justify-content) */
+/* ===================== */
+
+body, .header, .container, .process, .commentsContainer, .contactsDiv, footer, .myWork, .processTitles, .listDiv, .listElement {
+  text-align: left !important;
+  align-items: flex-start !important;
+}
+
+
+
+/* ===================== */
+/* 🪄 ФИКС: Отступ сверху у блока "Готовы сотрудничать?" при адаптиве */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .processTitles#progress {
+    margin-top: 60px !important;
+  }
+
+  @media (max-width: 480px) {
+    .processTitles#progress {
+      margin-top: 40px !important;
+    }
+  }
+}
+
+
+
+/* ===================== */
+/* 🧩 ФИКС: Кнопки в хедере тянутся на мобильных */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .buttons button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+/* ===================== */
+/* 🪄 ФИКС: Отступ сверху для всех блоков .processTitles на мобильных */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .processTitles {
+    margin-top: 60px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .processTitles {
+    margin-top: 40px !important;
+  }
+}
