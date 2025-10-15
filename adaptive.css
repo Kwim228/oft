@@ -190,7 +190,7 @@ body, .header, .container, .process, .commentsContainer, .contactsDiv, footer, .
 
 
 /* ===================== */
-/* 🧩 ФИКС: Кнопки в хедере тянутся на мобильных */
+/* ФИКС: Кнопки в хедере тянутся на мобильных */
 /* ===================== */
 
 @media (max-width: 768px) {
@@ -222,5 +222,63 @@ body, .header, .container, .process, .commentsContainer, .contactsDiv, footer, .
 @media (max-width: 480px) {
   .processTitles {
     margin-top: 40px !important;
+  }
+}
+
+/* ===================== */
+/* 📱 АДАПТИВ ДЛЯ iPhone 14 (max-width: 430px) */
+/* ===================== */
+
+@media (max-width: 430px) {
+  .header {
+    margin-top: 80px;
+    padding: 0 10px;
+    font-size: 18px;
+  }
+
+  .vlad, .shary {
+    font-size: 28px;
+  }
+
+  .textMyWork {
+    font-size: 28px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .processTitles {
+    margin-top: 30px !important;
+    font-size: 20px;
+  }
+
+  .descriptionFirstProject {
+    margin: 25px 0px;
+  }
+
+  .myWork, .process, .commentsContainer, .contactsDiv {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .listElement {
+    font-size: 16px;
+  }
+
+  .commentsDiv {
+    font-size: 15px;
+  }
+
+  .contactsDiv {
+    gap: 10px;
+  }
+
+  footer {
+    display: none;
   }
 }
