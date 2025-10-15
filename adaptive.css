@@ -1,5 +1,5 @@
 /* ===================== */
-/* 📱 АДАПТИВ */
+/* АДАПТИВ */
 /* ===================== */
 
 @media (max-width: 1024px) {
@@ -69,11 +69,20 @@
 
   .descriptionPortfolio {
     width: 100%;
+    font-size: 15px;
   }
 
   .firstProject, .secondProject {
     flex-direction: column !important;
     align-items: flex-start;
+  }
+
+  .line {
+    width: 75px;
+  }
+
+  .description{
+    font-size: 15px;
   }
 
   .descriptionFirstProject{
@@ -86,6 +95,10 @@
   .name {
     font-size: 24px;
     color: var(--color-accent);
+  }
+
+  .year {
+      font-size: 28px;
   }
 
   .process {
@@ -161,7 +174,7 @@ img {
 }
 
 /* ===================== */
-/* 🧩 ЛЕВОЕ ВЫРАВНИВАНИЕ (без вмешательства в justify-content) */
+/* ЛЕВОЕ ВЫРАВНИВАНИЕ (без вмешательства в justify-content) */
 /* ===================== */
 
 body, .header, .container, .process, .commentsContainer, .contactsDiv, footer, .myWork, .processTitles, .listDiv, .listElement {
@@ -210,7 +223,7 @@ body, .header, .container, .process, .commentsContainer, .contactsDiv, footer, .
 
 
 /* ===================== */
-/* 🪄 ФИКС: Отступ сверху для всех блоков .processTitles на мобильных */
+/* ФИКС: Отступ сверху для всех блоков .processTitles на мобильных */
 /* ===================== */
 
 @media (max-width: 768px) {
@@ -285,7 +298,7 @@ body, .header, .container, .process, .commentsContainer, .contactsDiv, footer, .
 
 @media (max-width: 400px) {
   .header {
-    margin-top: 80px;
+    margin-top: 120px;
     padding: 0 10px;
     font-size: 18px;
   }
@@ -307,17 +320,31 @@ body, .header, .container, .process, .commentsContainer, .contactsDiv, footer, .
   }
 
   .processTitles {
-    margin-top: 30px !important;
-    font-size: 18px;
+    margin: 30px !important;
+    font-size: 15px;
   }
 
   .descriptionFirstProject {
     margin: 25px 0px;
   }
 
-  .myWork, .process, .commentsContainer, .contactsDiv {
-    gap: 20px;
+  .myWork, .commentsContainer, .contactsDiv {
+    gap: 0px;
     padding: 0 10px;
+  }
+
+  .process {
+    padding: 0px 40px;
+  }
+
+  .listTitle {
+    color: var(--color-black);
+    font-size: 24px;
+    margin: 10px 0px 20px 0px;
+  }
+
+  .processTitles#progress {
+    margin: 40px 0px !important;
   }
 
   .listElement {
