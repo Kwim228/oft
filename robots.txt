@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Укажи свою карту сайта (если есть)
+Sitemap: https://kwim228.github.io/oft/sitemap.xml
