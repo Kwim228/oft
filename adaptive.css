@@ -179,7 +179,6 @@ img {
 
 body, .header, .container, .process, .commentsContainer, .contactsDiv, footer, .myWork, .processTitles, .listDiv, .listElement {
   text-align: left !important;
-  align-items: flex-start !important;
 }
 
 
