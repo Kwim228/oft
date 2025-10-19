@@ -85,6 +85,11 @@ body{
     margin-right: 10px;
 }
 
+.logoText{
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .navigation{
     display: flex;
     flex-direction: row;
